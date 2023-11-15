@@ -17,6 +17,10 @@ class TestAddition(unittest.TestCase):
     def test_add_mixed_numbers(self):
         self.assertEqual(add(1, -3), -2)
 
+    def test_add_worng(self):
+        self.assertFalse(add(1,-3) != -2)
+        self.assertEqual(add(1, -3), -2)
+
 # Run the tests if the script is executed
 if __name__ == '__main__':
     unittest.main()
